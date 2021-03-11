@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Myusestate from '@/components/usestate.js'
+import  Myusecontext from "@/components/usecontext";
+import Myuseeffect from '@/components/useeffect'
+import Myusecallback from '@/components/usecallback'
+import Myusememo from '@/components/usememo'
+import Myusereducer from '@/components/usereducer'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Myusestate></Myusestate>
+      <Myusecontext></Myusecontext>
+      <Myuseeffect></Myuseeffect>
+      <Myusecallback></Myusecallback> */}
+      <Myusememo></Myusememo>
+      <Myusereducer></Myusereducer>
     </div>
   );
 }
